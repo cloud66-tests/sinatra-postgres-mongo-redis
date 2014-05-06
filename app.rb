@@ -44,7 +44,7 @@ class App < Sinatra::Application
 
     set :cache, Dalli::Client.new
 
-    REDIS = Redis.new(:host => "127.0.0.1", :port => 6379, :password => "")
+    REDIS = Redis.new(:host => ENV['REDIS_ADDRESS'], :port => 6379, :password => "")
 
     use Rack::Throttle::Hourly,   :max => 1000, :cache => REDIS, :key_prefix => 'throttle_sinatra_app'
     Resque.redis = REDIS
