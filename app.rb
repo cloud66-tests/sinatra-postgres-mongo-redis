@@ -61,7 +61,7 @@ class App < Sinatra::Application
 
     set :cache, Dalli::Client.new
 
-    uri = URI.parse(ENV["REDIS_ADDRESS"])
+    uri = URI.parse(ENV["REDIS_URL_INT"])
 
     REDIS = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
 
@@ -75,7 +75,7 @@ class App < Sinatra::Application
 
     set :cache, Dalli::Client.new
 
-    uri = URI.parse(ENV["REDIS_ADDRESS"])
+    uri = URI.parse(ENV["REDIS_URL_INT"])
 
     REDIS = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
 
