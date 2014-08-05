@@ -3,9 +3,9 @@ production:
     servers:
       - server:
           unique_name: sinatraall1
-          vendor: 'digitalocean'
-          region: '4'
-          size: '65'
+          vendor: 'aws'
+          region: 'us-east-1'
+          size: 'c3.large'
     configuration:
       ruby_version: 2.1.2
   postgresql:
