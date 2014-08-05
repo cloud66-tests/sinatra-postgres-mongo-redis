@@ -1,22 +1,22 @@
 production: 
   sinatra: 
     servers:
-      server:
-        unique_name: sinatraall1
-        vendor: 'digitalocean'
-        region: '4'
-        size: '65'
+      - server:
+          unique_name: sinatraall1
+          vendor: 'digitalocean'
+          region: '4'
+          size: '65'
     configuration:
       ruby_version: 2.1.2
   postgresql:
     servers:
-      server: 
-        same_as: sinatraall1
+      - server: 
+          same_as: sinatraall1
   redis:
     servers:
-      server: 
-        same_as: sinatraall1
+      - server: 
+          same_as: sinatraall1
   mongodb:
     servers:
-      server: 
-        same_as: sinatraall1
+      - server: 
+          same_as: sinatraall1
