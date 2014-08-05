@@ -9,10 +9,10 @@ production:
       ruby_version: 2.1.2
   postgresql:
     server: 
-      same_as: sinatrapgmongoredis
+      same_as: sinatrapgmongoredis1
   redis:
     server: 
-      same_as: sinatrapgmongoredis
+      same_as: sinatrapgmongoredis1
   mongodb:
     server: 
-      same_as: sinatrapgmongoredis
+      same_as: sinatrapgmongoredis1
